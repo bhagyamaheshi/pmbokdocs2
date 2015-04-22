@@ -1,0 +1,71 @@
+body > .container {
+    padding-top: 0;
+}
+
+div.container > div.page-header {
+    margin-top: 0px;
+}
+
+div.container > h1 {
+    margin-top: 0px;
+}
+
+.navbar-travelersabroad {
+    background-color: #007098;
+    border-color: #004d69;
+}
+.navbar-travelersabroad .navbar-brand {
+    color: #ecf0f1;
+}
+.navbar-travelersabroad .navbar-brand:hover, .navbar-travelersabroad .navbar-brand:focus {
+    color: #006169;
+}
+.navbar-travelersabroad .navbar-text {
+    color: #ecf0f1;
+}
+.navbar-travelersabroad .navbar-nav > li > a {
+    color: #ecf0f1;
+}
+.navbar-travelersabroad .navbar-nav > li > a:hover, .navbar-travelersabroad .navbar-nav > li > a:focus {
+    color: #006169;
+}
+.navbar-travelersabroad .navbar-nav > .active > a, .navbar-travelersabroad .navbar-nav > .active > a:hover, .navbar-travelersabroad .navbar-nav > .active > a:focus {
+    color: #ecf0f1;
+    background-color: #004d69;
+}
+.navbar-travelersabroad .navbar-nav > .open > a, .navbar-travelersabroad .navbar-nav > .open > a:hover, .navbar-travelersabroad .navbar-nav > .open > a:focus {
+    color: #006169;
+    background-color: #004d69;
+}
+.navbar-travelersabroad .navbar-toggle {
+    border-color: #004d69;
+}
+.navbar-travelersabroad .navbar-toggle:hover, .navbar-travelersabroad .navbar-toggle:focus {
+    background-color: #004d69;
+}
+.navbar-travelersabroad .navbar-toggle .icon-bar {
+    background-color: #ecf0f1;
+}
+.navbar-travelersabroad .navbar-collapse,
+.navbar-travelersabroad .navbar-form {
+    border-color: #ecf0f1;
+}
+.navbar-travelersabroad .navbar-link {
+    color: #ecf0f1;
+}
+.navbar-travelersabroad .navbar-link:hover {
+    color: #006169;
+}
+
+@media (max-width: 767px) {
+    .navbar-travelersabroad .navbar-nav .open .dropdown-menu > li > a {
+        color: #ecf0f1;
+    }
+    .navbar-travelersabroad .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-travelersabroad .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #006169;
+    }
+    .navbar-travelersabroad .navbar-nav .open .dropdown-menu > .active > a, .navbar-travelersabroad .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-travelersabroad .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #006169;
+        background-color: #004d69;
+    }
+}

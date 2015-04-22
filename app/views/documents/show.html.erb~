@@ -1,0 +1,61 @@
+<div id="new_project" class="col-md-3">
+	<h2><%= @projectName.projectName %> : <%= @documentCategoryName %></h2><br/>
+	<h4> Upload Document </h4><br/>
+	<%= form_for(@document) do |form| %>
+		<%= form.hidden_field :project_id, value: params[:projectId] %>
+		<%= form.hidden_field :document_category_id, value: params[:documentCategoryId] %>
+<<<<<<< HEAD
+
+=======
+>>>>>>> facd99529dabad215c2bb70e499443fa7f6bd40b
+				<%= radio_button_tag(:versionType, "major", checked = false) %>
+				<%= label_tag(:versionTypeMajor, "Major") %> &nbsp&nbsp&nbsp&nbsp
+				<%= radio_button_tag(:versionType, "minor", checked = true) %>
+				<%= label_tag(:versionTypeMinor, "Minor") %> <br/>
+				<%= form.text_area :description, :class => "form-control" %>
+				<br/>
+				<%= form.file_field :file %>
+				<br/>
+		<div class="actions">
+			<%= form.submit :class => "btn btn-success" %>
+		</div>
+	<% end %>
+ </div>
+<div id="new_project" class="col-md-6">
+	<div class="container">
+		<div class="page-header">
+      		<h3>Version History</h3>
+<<<<<<< HEAD
+					<table class="table table-bordered">
+=======
+		<table class="table table-bordered">
+>>>>>>> facd99529dabad215c2bb70e499443fa7f6bd40b
+      			<thead>
+        			<tr>
+          		   <th class="col-md-2">Version</th>
+                 <th class="col-md-2">Description</th>
+          			 <th class="col-md-2">Created Date</th>
+        			</tr>
+      			</thead>
+      			<tbody>
+              <% if @documentList != nil %>
+        			<% @documentList.each do |list| %>
+          			<tr>
+            			<td><%= link_to @documentCategoryName+' v'+list.version.to_s+'.'+list.versionMinor.to_s, list.file.url %></td>
+                        <td><%= list.description %></td>
+            			<td><%= list.created_at.to_formatted_s(:long_ordinal) %></td>
+          			</tr>
+      				<% end %>
+              <% end %>
+    			   </tbody>
+			   </table>
+    </div>
+		<%= link_to 'Document Category List', projects_path, :class =>"btn btn-info" %>
+	</div>
+</div>
+
+<script>
+  <% if params[:notice].present? %>
+    alert(<%= params[:notice] %>);
+  <% end %>
+</script>

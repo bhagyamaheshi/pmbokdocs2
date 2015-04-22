@@ -1,0 +1,44 @@
+
+@import "bootstrap-variables";
+@import "bootstrap.scss";
+
+body {
+  padding-top: $navbar-height;
+}
+
+
+
+.navbar-collapse{
+  background-color: #176794;
+}
+
+#logo{
+  float :left;
+  padding-top: 5px;
+}
+
+.navbar-brand {
+  background: no-repeat left center;
+  height: 70px;
+  padding: 0
+}
+
+.page-header {
+  a.btn {
+    float: right;
+  }
+
+  a.btn + a.btn {
+    margin-right: 8px;
+  }
+}
+
+.btn{
+  success-bg: #176794;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  width: initial;
+  height: initial;
+  margin-top: 7px;
+}
